@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'Brasika Display';
+  src: url('../Fonts/brasika-display.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brastika';
+  src: url('../Fonts/Brastika\ Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #eadecb;
+}
+
+.registration-container,
+.onspot-banner {
+  max-width: 1250px; /* Match both boxes */
+  margin: 2rem auto 0 auto;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.registration-container {
+  padding: 2rem 3rem;
+  background: #f5f0f6;
+  box-shadow: 0 2px 16px rgba(60, 0, 60, 0.08);
+}
+
+.registration-container h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: 'Brasika Display', Georgia, serif;
+  color: #000;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  /* Center the title */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.form-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.6rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background: #4b3452;
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+input[type="text"][name="transactionId"] {
+  width: 50%; /* Adjust this value as needed */
+  min-width: 180px;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 20px;
+  background: #4b3452;
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 0.8rem;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+  background: #6a4c7a;
+}
+
+.events-section {
+  background: #4b3452;
+  border-radius: 18px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.events-section label {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.65rem; /* Increased font size */
+  margin-right: 2.75rem;
+  margin-bottom: 0.7rem;
+  min-width: 120px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.events-section input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #3d2346;
+}
+
+.note {
+  font-size: 1.6rem;;
+  color: #000;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+select {
+  display: block;
+  margin: 0 auto 1.2rem auto;
+  width: 60%;
+  background: #4b3452;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+}
+
+.qr-section {
+  text-align: center;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.qr-section h4 {
+  margin-bottom: 0.7rem;
+  color: #3d2346;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.qr-box {
+  width: 150px;
+  height: 150px;
+  background: #4b3452;
+  border-radius: 16px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-label {
+  text-align: center;
+  font-size: 1.5rem;;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.submit-btn {
+  display: block;
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  padding: 0.7rem 0;
+  background: #4b3452;
+  color: #fff;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #6a4c7a;
+}
+
+/* Use Kurale for body text and labels */
+.registration-container,
+.form-group label,
+.note,
+.transaction-label,
+.submit-btn {
+  font-family: 'Brastika', Georgia, serif;
+}
+
+.registration-container h1{
+  text-align: center;
+}
+
+.events-title {
+  display: block;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+  margin-top: 1.2rem;
+  text-align: center; /* Center the title */
+  font-family: 'Brasika Display', Georgia, serif;
+}
+
+.onspot-banner {
+  background: #ffffff;
+  color: #000;
+  font-family: 'Brasika Display', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem auto 0 auto;
+  padding: 2rem 3rem;
+  border-radius: 30px;
+  max-width: 1250px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  display: block;
+  /* Add box-shadow for depth if needed */
+  box-shadow: 0 2px 16px rgba(60, 0, 60, 0.08);
+}
