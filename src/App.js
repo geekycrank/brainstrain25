@@ -1,9 +1,16 @@
-import React from 'react';
-import Registration from './components/Registration';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Register from "./components/Register";
 
 function App() {
-  return <Registration />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
-
