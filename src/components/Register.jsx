@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Registration.css';
+import './Register.css';
 // import { useNavigate } from 'react-router-dom';
 
 const initialFormData = {
