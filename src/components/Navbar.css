@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Brastika';
+  src: url('../Fonts/Brastika\ Regular.otf') format('opentype');
+}
+
+.navbarr {
+  width: 95%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  background: linear-gradient(90deg, #1a0826, #2b1642, #3b1b55, #5c2a7c);
+  color: #fff;
+  font-family: 'Brastika', sans-serif;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 100%;
+  margin-right: 12px;
+}
+
+.brainstrain {
+  font-size: 1.8rem;
+  color: #f5e6d3;
+  margin: 0;
+}
+
+.top-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.top-nav p {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #e3b6ff;
+}
+
+.top-nav .active a {
+  color: #e3b6ff;
+  border-bottom: 2px solid #e3b6ff;
+  padding-bottom: 4px;
+}

@@ -1,0 +1,279 @@
+/* ---------------- Fonts ---------------- */
+@font-face {
+  font-family: 'Brasika Display';
+  src: url('../Fonts/brasika-display.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brastika';
+  src: url('../Fonts/Brastika\ Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ---------------- Global Container ---------------- */
+.main-page {
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  min-height: 100vh;
+  background: #2b172b url('../assets/background.png') no-repeat center top;
+  background-size: cover;
+  color: #f0e9ff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero {
+  position: relative;
+  min-height: 500px;
+  padding-top: 60px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-stars, .hero-moon, .hero-castle, .hero-hill, .hero-trees, .hero-bats, .hero-witch {
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero-stars {top: 0; left: 0; width: 100%; opacity: .4;}
+.hero-moon {top: 40px; right: 19%; width: 180px; opacity: .8;}
+.hero-castle {top: 100px; left: 50%; transform: translateX(-50%); width: 240px;}
+.hero-hill {bottom: 0; left: 50%; transform: translateX(-50%); width: 700px;}
+.hero-trees {bottom: 0; left: 0; width: 100%; opacity: .8;}
+.hero-bats {top: 60px; left: 11%; width: 120px; opacity: .7;}
+.hero-witch {top: 20px; right: 8%; width: 110px; opacity: .8;}
+
+/* Text overlay */
+.overlay {
+  position: relative;
+  z-index: 5;
+  margin-top: 140px;
+}
+
+.society-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #f1e9fa;
+  font-family: 'Brastika', sans-serif;
+}
+
+.hero-title {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto 20px auto;
+}
+
+.bstypography {
+  max-width: 420px;
+  width: 90%;
+  align-items: center;
+}
+.bsotypography {
+  max-width: 420px;
+  width: 90%;
+  align-items: center;
+}
+
+.date {
+  font-size: 1.4rem;
+  color: #f7baff;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-family: 'Brastika', sans-serif;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 18px;
+}
+
+.time-box {
+  background: linear-gradient(135deg, #442c4a 60%, #582744);
+  border-radius: 12px;
+  padding: 18px 28px 11px 28px;
+  text-align: center;
+  box-shadow: 0 0 12px #232, 0 12px 18px -11px #b465c7;
+  font-size: 2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.time-box .label {
+  display: block;
+  font-size: 1rem;
+  margin-top: 4px;
+  color: #ecbff2;
+  letter-spacing: 1px;
+}
+
+/* ---------------- About ---------------- */
+.about-section {
+  margin: 0 auto;
+  background: linear-gradient(180deg, #26192c 80%, rgba(49,31,59,0.96));
+  padding: 40px 0 50px 0;
+  box-shadow: 0 6px 18px -12px #d0abe6;
+  text-align: center;
+}
+
+.about-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  max-width: 800px;
+  background: #201025;
+  border-radius: 18px;
+  padding: 21px 38px;
+  box-shadow: 0 2px 22px -10px #8e4ac5;
+}
+
+.about-icon {
+  width: 68px;
+  height: 68px;
+}
+
+.about-box h3 {
+  color: #eed2fd;
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-family: 'Brastika', sans-serif;
+}
+
+.about-box p {
+  font-size: 1.1rem;
+  color: #e7ccee;
+  line-height: 1.6;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* ---------------- Web Team ---------------- */
+.web-team-section {
+  background: linear-gradient(180deg, #512859 80%, #1c0f20);
+  padding: 34px 0;
+  margin-top: -4px;
+  text-align: center;
+}
+
+.web-team-section h2 {
+  color: #f8d1ff;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-family: 'Brastika', sans-serif;
+  text-shadow: 0 0 14px #360;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.member-card {
+  background: rgba(30,14,34,0.96);
+  border-radius: 16px;
+  padding: 22px 24px 13px 24px;
+  text-align: center;
+  width: 180px;
+  box-shadow: 0 3px 21px -10px #c488d8;
+}
+
+.photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #444;
+  margin-bottom: 13px;
+  box-shadow: 0 2px 12px -8px #ad9799;
+}
+
+.details h4 {
+  color: #eed2fd;
+  font-size: 1.15rem;
+  font-weight: 600;
+  font-family: 'Brastika', sans-serif;
+}
+
+.details p {
+  color: #dab6de;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------------- Footer ---------------- */
+.footer {
+  background: #17081c;
+  color: #fdedff;
+  padding: 37px 0 17px 0;
+  text-align: center;
+  border-top: 2px solid #291533;
+  font-size: 1.1rem;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+
+.phone-icon {
+  width: 100px;
+  opacity: 0.9;
+}
+
+.footer-socials {
+  margin: 16px 0 6px 0;
+}
+
+.footer-socials a {
+  color: #ffdcfa;
+  font-size: 2rem;
+  margin: 0 12px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-socials a:hover {
+  color: #a74feb;
+}
+
+.footer-credit {
+  margin-top: 16px;
+  color: #d9b1ef;
+  font-size: 0.95rem;
+  font-family: 'Brastika', sans-serif;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 950px) {
+  .team-cards { gap: 18px; }
+}
+@media (max-width: 700px) {
+  .about-box, .team-cards {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-contact {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 540px) {
+  .bstypography, .bsotypography { max-width: 280px; }
+  .web-team-section h2 { font-size: 1.4rem; }
+}
+@media (max-width: 400px) {
+  .time-box {
+    padding: 14px 20px;
+    font-size: 1.7rem;
+  }
+  .time-box .label { font-size: 0.85rem; }
+}
