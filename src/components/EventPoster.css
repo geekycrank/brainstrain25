@@ -50,6 +50,11 @@
   color: #3a2c63;
 }
 
+.subsection-title {
+  font-size: 1.1rem;
+  margin: 15px 0 8px;
+  color: #3a2c63;
+}
 .section-text {
   line-height: 1.5;
   margin-bottom: 10px;

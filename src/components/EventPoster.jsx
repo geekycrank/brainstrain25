@@ -1,16 +1,23 @@
 import React from "react";
 import "./EventPoster.css";
 
-const EventPoster = ({ title, description, guidelines, rules, contact, prize }) => {
+const EventPoster = ({ title, description, theme, guidelines, prelims, finals, contact, prize }) => {
   return (
     <div className="poster-container">
       <div className="poster-box">
         <h1 className="poster-title">{title}</h1>
 
         <section>
-          <h2 className="section-title">Events</h2>
+          <h2 className="section-title">Description</h2>
           <p className="section-text">{description}</p>
         </section>
+
+        {theme && (
+          <section>
+            <h2 className="section-title">Theme</h2>
+            <p className="section-text">{theme}</p>
+          </section>
+        )}
 
         <section>
           <h2 className="section-title">Guidelines</h2>
@@ -22,12 +29,33 @@ const EventPoster = ({ title, description, guidelines, rules, contact, prize }) 
         </section>
 
         <section>
-          <h2 className="section-title">Rules</h2>
-          <ol>
-            {rules.map((r, i) => (
-              <li key={i}>{r}</li>
-            ))}
-          </ol>
+          {(prelims.length > 0 || finals.length > 0) ? (
+            <>
+              <h2 className="section-title">Rules</h2>
+              
+              {prelims && prelims.length > 0 && (
+                <div>
+                  <h3 className="subsection-title">Preliminary Round</h3>
+                  <ol>
+                    {prelims.map((rule, i) => (
+                      <li key={i}>{rule}</li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+
+              {finals && finals.length > 0 && (
+                <div>
+                  <h3 className="subsection-title">Final Round</h3>
+                  <ol>
+                    {finals.map((rule, i) => (
+                      <li key={i}>{rule}</li>
+                    ))}
+                  </ol>
+                </div>
+              )}
+            </>
+          ) : null}
         </section>
 
         <div className="footer">

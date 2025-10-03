@@ -22,27 +22,27 @@ const EventCard = ({ event }) => {
   // Function to get the correct image based on event title
   const getEventImage = (title) => {
     switch (title) {
-      case "Adzap":
+      case "ADZAP":
         return adzapImage;
-      case "Debate":
+      case "DEBATE":
         return DebateImage;
-      case "Uno Minuto":
+      case "UNO MINUTO":
         return UnoMinutoImage;
-      case "Puzzle":
+      case "PUZZLE":
         return PuzzleImage;
-      case "Dramaa":
+      case "DRAMA":
         return DramaImage;
-      case "Quiz":
+      case "QUIZ":
         return QuizImage;
-      case "Jam":
+      case "JAM":
         return JamImage;
-      case "Shipwreck":
+      case "SHIPWRECK":
         return ShipwreckImage;
-      case "Dosthana":
+      case "THE ARCANE CHALLENGE":
         return DosthanaImage;
-      case "Poem":
+      case "POEM":
         return PoemImage;
-      case "Microtale":
+      case "MICROTALE":
         return MicrotaleImage;
       default:
         return adzapImage;
@@ -51,22 +51,14 @@ const EventCard = ({ event }) => {
 
   // Function to get event data for the poster
   const getEventData = () => {
-    // This would typically come from a data source
-    // For now, returning a sample structure
     return {
       title: event.title,
       description: event.description,
-      guidelines: [
-        "Guideline 1 for " + event.title,
-        "Guideline 2 for " + event.title,
-        "Guideline 3 for " + event.title,
-      ],
-      rules: [
-        "Rule 1 for " + event.title,
-        "Rule 2 for " + event.title,
-        "Rule 3 for " + event.title,
-      ],
-      contact: { name: "Event Coordinator", phone: event.contact },
+      theme: event.theme,  
+      guidelines: [...(event.guidelines || [])],
+      prelims: [...(event.prelims || [])],
+      finals: [...(event.finals || [])],
+      contact: { name: event.coordinator, phone: event.contact },
       prize: event.prize,
     };
   };
