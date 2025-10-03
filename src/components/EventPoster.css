@@ -1,0 +1,81 @@
+/* Background styling */
+.poster-container {
+  background: transparent;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: "Georgia", serif;
+  color: #222;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.poster-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card box */
+.poster-box {
+  background: #f5f5f5;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.3);
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin: 20px;
+}
+
+.poster-box::-webkit-scrollbar {
+  display: none;
+}
+
+/* Titles */
+.poster-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-family: "Times New Roman", serif;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  margin: 20px 0 10px;
+  color: #3a2c63;
+}
+
+.section-text {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+ol {
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 0.95rem;
+  background: none;
+  color: #333;
+  padding: 15px 0;
+}
+
+.footer p {
+  margin: 0;
+  color: #333;
+}
+
+.prize {
+  font-weight: bold;
+}

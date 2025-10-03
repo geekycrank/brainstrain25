@@ -1,0 +1,82 @@
+.event-detail-container {
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  color: #fff;
+  padding: 20px;
+}
+
+.event-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  color: #ff00ff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.event-title {
+  font-size: 36px;
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.event-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.7);
+  border-radius: 10px;
+  border: 1px solid #ff00ff;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+.event-section h2 {
+  color: #ff00ff;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
+}
+
+.event-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.event-section ul {
+  padding-left: 20px;
+}
+
+.event-section li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.event-not-found {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.event-not-found h2 {
+  color: #ff00ff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.event-not-found p {
+  font-size: 20px;
+  color: #ccc;
+  margin-bottom: 30px;
+}

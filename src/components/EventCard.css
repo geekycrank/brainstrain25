@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Brastika';
+  src: url('../Fonts/Brastika Regular.otf') format('opentype'),
+       url('../Fonts/Brastika-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .event-card {
   width: 100%;
   max-width: 900px;
@@ -5,21 +13,21 @@
   background: linear-gradient(to right, #6a406a, #4e2e4e, #6a406a);
   border-radius: 15px;
   position: relative;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .card-gradient-border {
   border-radius: 13px;
   background: #3c203c;
   padding: 20px;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .card-content {
   display: flex;
   align-items: center;
   gap: 20px;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .card-image-container {
@@ -43,7 +51,7 @@
 
 .card-details {
   flex: 1;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .card-title {
@@ -51,7 +59,7 @@
   font-family: 'Brastika', sans-serif;
   font-size: 32px;
   font-weight: 600;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .card-description {
@@ -59,7 +67,7 @@
   font-size: 14px;
   line-height: 1.5;
   color: #FFFFFF;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .card-info {
@@ -68,21 +76,21 @@
   gap: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .contact-info {
   display: flex;
   align-items: center;
   gap: 5px;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .info-text {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .discover-btn {
@@ -93,7 +101,7 @@
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  letter-spacing: 0.2px; /* Added letter spacing */
+  letter-spacing: 0.2px;
 }
 
 .discover-btn:hover {
@@ -105,4 +113,45 @@
   height: 20px;
   object-fit: contain;
   vertical-align: middle;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2b172b url('../assets/background.png') no-repeat center top;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(3px);
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: auto;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
 }

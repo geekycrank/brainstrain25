@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./MainPage.css";
 
 // Assets
@@ -72,6 +73,7 @@ export default function MainPage() {
             <div className="time-box"><span className="num">{timeLeft.mins}</span><span className="label">Mins</span></div>
             <div className="time-box"><span className="num">{timeLeft.secs}</span><span className="label">Secs</span></div>
           </div>
+          <Link to="/events" className="explore-events-btn">Explore Events</Link>
         </div>
       </section>
 

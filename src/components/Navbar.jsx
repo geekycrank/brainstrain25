@@ -17,10 +17,10 @@ function Navbar() {
       {/* Right side: Navigation */}
       <div className="top-nav">
         <p className={location.pathname === "/" ? "active" : ""}><Link to="/">Home</Link></p>
-        <p className={location.pathname === "/Events" ? "active" : ""}><Link to="/Events">Events</Link></p>
-        <p className={location.pathname === "/Register" ? "active" : ""}><Link to="/Register">Register</Link></p>
-        <p className={location.pathname === "/CampusAmbassador" ? "active" : ""}><Link to="/CampusAmbassador">Campus Ambassador</Link></p>
-        <p className={location.pathname === "/Contact" ? "active" : ""}><Link to="/Contact">Contact</Link></p>
+        <p className={location.pathname === "/events" ? "active" : ""}><Link to="/events">Events</Link></p>
+        <p className={location.pathname === "/register" ? "active" : ""}><Link to="/register">Register</Link></p>
+        <p className={location.pathname === "/campus-ambassador" ? "active" : ""}><Link to="/campus-ambassador">Campus Ambassador</Link></p>
+        <p className={location.pathname === "/contact" ? "active" : ""}><Link to="/contact">Contact</Link></p>
       </div>
     </nav>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./EventCard.css";
 import adzapImage from "../assets/Adzap.png";
 import DebateImage from "../assets/Debate.png";
@@ -12,11 +12,13 @@ import DosthanaImage from "../assets/Dosthana.png";
 import PoemImage from "../assets/Poem.png";
 import MicrotaleImage from "../assets/Microtale.png";
 
-import Rectangle from "../assets/Rectangle.png"
-
+import Rectangle from "../assets/Rectangle.png";
 import phoneCard from "../assets/Phone Vector.png";
+import EventPoster from "./EventPoster";
 
 const EventCard = ({ event }) => {
+  const [showPoster, setShowPoster] = useState(false);
+
   // Function to get the correct image based on event title
   const getEventImage = (title) => {
     switch (title) {
@@ -47,36 +49,79 @@ const EventCard = ({ event }) => {
     }
   };
 
+  // Function to get event data for the poster
+  const getEventData = () => {
+    // This would typically come from a data source
+    // For now, returning a sample structure
+    return {
+      title: event.title,
+      description: event.description,
+      guidelines: [
+        "Guideline 1 for " + event.title,
+        "Guideline 2 for " + event.title,
+        "Guideline 3 for " + event.title,
+      ],
+      rules: [
+        "Rule 1 for " + event.title,
+        "Rule 2 for " + event.title,
+        "Rule 3 for " + event.title,
+      ],
+      contact: { name: "Event Coordinator", phone: event.contact },
+      prize: event.prize,
+    };
+  };
+
   return (
-    <div className="event-card">
-      <div className="card-gradient-border">
-        <div className="card-content">
-          <div className="card-image-container">
-            <img
-              src={getEventImage(event.title)}
-              alt={event.title}
-              className="card-image"
-            />
-          </div>
-          <div className="card-details">
-            <h3 className="card-title">{event.title}</h3>
-            <p className="card-description">{event.description}</p>
-            <div className="card-info">
-              <div className="contact-info">
-                <img
-                  src={phoneCard}
-                  alt="phoneCard"
-                  className="phoneCard-image"
-                />
-                <span className="info-text">{event.contact}</span>
+    <>
+      <div className="event-card">
+        <div className="card-gradient-border">
+          <div className="card-content">
+            <div className="card-image-container">
+              <img
+                src={getEventImage(event.title)}
+                alt={event.title}
+                className="card-image"
+              />
+            </div>
+            <div className="card-details">
+              <h3 className="card-title">{event.title}</h3>
+              <p className="card-description">{event.description}</p>
+              <div className="card-info">
+                <div className="contact-info">
+                  <img
+                    src={phoneCard}
+                    alt="phoneCard"
+                    className="phoneCard-image"
+                  />
+                  <span className="info-text">{event.contact}</span>
+                </div>
+                <button
+                  className="discover-btn"
+                  onClick={() => setShowPoster(true)}
+                >
+                  Discover More
+                </button>
+                <span className="info-text">Prize Pool: {event.prize}</span>
               </div>
-              <button className="discover-btn">Discover More</button>
-              <span className="info-text">Prize Pool: {event.prize}</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+      {showPoster && (
+        <div className="modal-overlay" onClick={() => setShowPoster(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button
+              className="close-button"
+              onClick={() => setShowPoster(false)}
+            >
+              ×
+            </button>
+            <EventPoster {...getEventData()} />
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

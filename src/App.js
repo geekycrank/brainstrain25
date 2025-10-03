@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
 import MainPage from "./components/MainPage";
 import Navbar from "./components/Navbar";
+import EventList from "./components/EventList";
+import EventDetail from "./components/EventDetail";
+import CampusAmbassador from "./components/CampusAmbassador";
+import Contact from "./components/Contact";
 
 function App() {
   
@@ -14,16 +18,16 @@ function App() {
       prize:"2250",
       description: "Pitch the wildest product ideas with a twist of humor and creativity! Entertain the crowd with quirky ads, crazy props and unforgettable performances!",
       guidelines:[
-        "Design a product idea that’s attractive, innovative, funny, and wildly imaginative.",
+        "Design a product idea that's attractive, innovative, funny, and wildly imaginative.",
         "Every team member should take part in the act.",
         "Props are welcome—keep them simple and manageable.",
         "Stick to the time limit, or risk losing points."
       ],
       prelims:[
         "Teams must have 4–6 members.",
-        "You’ll get 7 minutes to plan and script your ad before the show begins, and 4–5 minutes to perform it (crossing the limit will cost points).",
+        "You'll get 7 minutes to plan and script your ad before the show begins, and 4–5 minutes to perform it (crossing the limit will cost points).",
         "Humor should be clean—no offensive jokes allowed.",
-        "The judge’s decision is final."
+        "The judge's decision is final."
       ]
     },
     {
@@ -49,7 +53,7 @@ function App() {
       finals:[
         "Finalists will be grouped into teams.",
         "The format will be explained during the finale.",
-        "Jury’s decision is final."
+        "Jury's decision is final."
       ]
     },
     
@@ -57,21 +61,21 @@ function App() {
       eventName:"DRAMA",
       contact:"6385698553",
       prize:"3750",
-      description:"Step into a world where stories come alive and emotions take center stage! Drama isn’t just an act it’s an experience.The curtain is rising will you rise with it?",
+      description:"Step into a world where stories come alive and emotions take center stage! Drama isn't just an act it's an experience.The curtain is rising will you rise with it?",
       guidelines:[
         "The first round of the event will be conducted based on the scripts submitted by the participating teams. Teams that are shortlisted for the final round will be notified via WhatsApp."
       ],
       prelims:[
-        "Each team must have 8–10 members. Teams outside this limit won’t be allowed.",
+        "Each team must have 8–10 members. Teams outside this limit won't be allowed.",
         "Teams should arrange their own props and costumes. Hazardous materials are strictly not allowed.",
         "Performances must be completed within 20 minutes, including setup and clearance time.",
         "Exceeding the time limit or breaking the rules will lead to disqualification.",
         "Teams must report on time and follow all instructions given by the organizers.",
         "Foul language, offensive content, or inappropriate themes are strictly prohibited.",
-        "Tampering with another team’s equipment or props will lead to immediate disqualification—play fair!",
+        "Tampering with another team's equipment or props will lead to immediate disqualification—play fair!",
         "All performances must stick to the given theme.",
         "Participants and audience are expected to maintain respect and decorum towards everyone, including the judges and organizers.",
-        "Only pre-registered teams can participate; spot registrations will not be accepted. The judges’ decision is final."
+        "Only pre-registered teams can participate; spot registrations will not be accepted. The judges' decision is final."
       ]
     },
     {
@@ -196,8 +200,8 @@ function App() {
         "Decisions of the jury is final and binding"
       ],
       prelims: [
-        "You’ll be given a quirky, unexpected scenario.",
-        "1 minute to think, then it’s your time to shine.",
+        "You'll be given a quirky, unexpected scenario.",
+        "1 minute to think, then it's your time to shine.",
         "Be spontaneous, imaginative, and engaging.",
         "Impress the captain — and you sail into Round 2."
       ],
@@ -237,6 +241,10 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/events" element={<EventList events={events} />} />
+        <Route path="/event/:eventName" element={<EventDetail events={events} />} />
+        <Route path="/campus-ambassador" element={<CampusAmbassador />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

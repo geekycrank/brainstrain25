@@ -277,3 +277,26 @@
   }
   .time-box .label { font-size: 0.85rem; }
 }
+
+/* ---------------- Explore Events Button ---------------- */
+.explore-events-btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  color: #000;
+  font-family: 'Brastika', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  margin-top: 30px;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.explore-events-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 255, 255, 0.7);
+}
