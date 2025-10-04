@@ -130,7 +130,7 @@ const events = [
         "The format will be explained during the finale.",
         "Jury's decision is final."
     ],
-    coordinator: 'NEHAL VARMA',
+    coordinator: 'MAHASAKTHI',
     contact: '7418908013', 
     prize: '2250' 
   },
@@ -175,7 +175,7 @@ const events = [
     finals: [
         "Final round rules will be announced on the spot."
     ],
-    coordinator: 'HARMITHA',
+    coordinator: 'HARMITHA SREE',
     contact: '6379190226', 
     prize: '2250' 
   },
@@ -241,7 +241,7 @@ const events = [
         "The finalists are required to speak fluently while their competitors scrutinize their speech for errors.",
         "Further rules will be explained before the start of the finals."
     ],
-    coordinator: 'MAHASAKTHI',
+    coordinator: 'NEHAL',
     contact: '9778117278',
     prize: '1500'
   }
