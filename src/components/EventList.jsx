@@ -29,22 +29,27 @@ const events = [
     title: 'SHIPWRECK',
     description: 'Stranded in the middle of the ocean, your ship is sinking fast — and there’s only one life jacket left. But here’s the twist: you’re not yourself. You’ve been transformed into a completely different persona — it could be Narendra Modi, Shinchan, Aishwarya Rai, Harry Potter, or even Iron Man! Your mission? Step into the shoes of your assigned character and convince the captain that you deserve the last life jacket. It’s not about muscles or might — it’s about wit, drama, humor, and how convincingly you breathe life into your role. This is a battle of imagination, presence, and persuasion. Can you survive the wreck?', 
     guidelines: [
-        "Solo event packed with drama and entertainment",
-        "Characters and scenarios will be revealed on the spot",
-        "Top 6 participants from Round 1 qualify for the Grand Showdown (Round 2)",
-        "Language must remain clean, creative, and respectful",
-        "Decisions of the jury is final and binding"
+        "A solo event with two levels – prelims and finals",
+        "Characters and scenarios would be revealed on the spot",
+        "Top 6 participants from Prelims advance to Finals",
+        "The use of language is encouraged to be thoughtful, creative, and respectful.",
+        "Jury's decisions are final",
+        "Characters once assigned cannot be reverted"
     ],
     prelims: [
-        "You'll be given a quirky, unexpected scenario.",
-        "1 minute to think, then it's your time to shine.",
+        "You’ll get a quirky, unexpected scenario.",
+        "1 minute to think and 90 seconds to speak.",
         "Be spontaneous, imaginative, and engaging.",
-        "Impress the captain — and you sail into Round 2."
+        "Additional information will be provided on-spot.",
+        "The survivors from the prelims sail through the storm and anchor themselves in the finals."
     ],
     finals: [
-        "A real or fictional character will be assigned to you.",
+        "You’ll be assigned a real or fictional character.",
         "Become that character — live them, breathe them.",
-        "Convince the captain why you  deserve the  life jacket."
+        "Convince the captain why you deserve the life jacket.",
+        "Use humour, drama, or emotional tactics —but stay appropriate.",
+        "Additional information will be provided on-spot.",
+        "ONE SHIP. ONE JACKET. ONE CHANCE. WILL YOU SURVIVE? "
     ],
     coordinator: 'LOGACHANDRAN',
     contact: '9629762581', 
@@ -182,7 +187,7 @@ const events = [
   {
     id: 9,
     title: 'PUZZLE',
-    description: "Prepare to twist your mind and challenge your thinking at this event. Unravel brain teasing mysteries like cryptic riddles to puzzles here and test your problem solving skills.",
+    description: "Embark on a mystical journey at our Magical Puzzle Quest! Unravel enchanting brainteasers and test your magical prowess. From cryptic spells to intricate potions, decipher mysteries that only the keenest minds can master.",
     guidelines: [
         "2 members per team.",
         "This single-round event will put your magical minds to the test.",
@@ -231,9 +236,10 @@ const events = [
         "Two-round event."
     ],
     prelims: [
-        "Prelims will be in EXTEMPORE format.",
-        "Participants will each be given a scenario or a situation on which they have to speak for 1 minute.",
+        "Prelims will be in on-the-spot speaking format.",
+        "Participants will each be given a topic on which they have to speak for 1 minute.",
         "A preparation time of 1 minute will be provided.",
+        "No internet or mobile usage allowed during preparation.",
         "Shortlisted participants will be eligible for the finals."
     ],
     finals: [
