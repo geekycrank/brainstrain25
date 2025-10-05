@@ -35,7 +35,7 @@ const EventPoster = ({ title, description, theme, guidelines, prelims, finals, c
               
               {prelims && prelims.length > 0 && (
                 <div>
-                  <h3 className="subsection-title">Preliminary Round</h3>
+                  <h3 className="subsection-title">Preliminaries</h3>
                   <ol>
                     {prelims.map((rule, i) => (
                       <li key={i}>{rule}</li>
@@ -46,7 +46,7 @@ const EventPoster = ({ title, description, theme, guidelines, prelims, finals, c
 
               {finals && finals.length > 0 && (
                 <div>
-                  <h3 className="subsection-title">Final Round</h3>
+                  <h3 className="subsection-title">Finals</h3>
                   <ol>
                     {finals.map((rule, i) => (
                       <li key={i}>{rule}</li>
